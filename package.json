@@ -1,0 +1,23 @@
+{
+  "name": "wordcounter",
+  "version": "1.0.0",
+  "description": "Application that counts each unique word from provided text",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoonsong95/WordCounter.git"
+  },
+  "author": "YS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoonsong95/WordCounter/issues"
+  },
+  "homepage": "https://github.com/yoonsong95/WordCounter#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

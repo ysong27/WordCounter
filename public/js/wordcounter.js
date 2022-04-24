@@ -65,6 +65,3 @@ $(document).ready(function () {
         }
     });
 });
-
-
-
