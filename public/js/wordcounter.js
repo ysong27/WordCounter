@@ -36,9 +36,8 @@ $(document).ready(function () {
             <tr><td>${word}</td><td>${wordDict[word]}</td></tr>      
           `;
         }
-        // display word count table
         var wordCountTable = `
-          <table>
+          <table class="table" id="wordCountTable">
             <thead>
               <th>Word</th>
               <th>Count</th>
@@ -51,17 +50,13 @@ $(document).ready(function () {
     }
 
     $("#wordCountButton").on("click", function () {
-
-        // get text, words, and word count dictionary
         var text = getInputText();
         if (text != "") {
             var words = getWordsFromText(text);
             var wordsDict = getWordCountDictionary(words);
-            console.log(wordsDict);
-
-            // create and display wordCountTable
-            var wordCountTable = createWordCountTable(wordDict);
-            $("#wordCountTableContainer").html(wordCountTable);
+            var wordCountTable = createWordCountTable(wordsDict);
+            var wordCountTableContent = "<h2>Result</h2>" + wordCountTable;
+            $("#wordCountTableContainer").html(wordCountTableContent);
         }
     });
 });

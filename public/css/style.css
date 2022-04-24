@@ -1,0 +1,21 @@
+#userTextContainer {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#userTextContainer > * {
+    display: block;
+    margin-top: 10px;
+}
+
+#userTextContainer > textarea {
+    width: 100%;
+}
+
+#wordCountTable {
+    width: 100%;
+}
+#wordCountButton {
+    width: 100%;
+    max-width: 600px;
+}
+
