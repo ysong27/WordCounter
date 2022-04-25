@@ -62,7 +62,15 @@ $(document).ready(function () {
             });
             var resultHeader = "<h2>Result</h2>"
             $("#resultHeaderContainer").html(resultHeader);
-
         }
     });
+
+    $("#clearButton").on("click", function() {
+        $("#userText").val("");
+        $("#wordCountTableContainer").empty();
+        $("#resultHeaderContainer").empty();
+    });
+
+
+
 });
