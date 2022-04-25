@@ -37,8 +37,8 @@ $(document).ready(function () {
           `;
         }
         var wordCountTable = `
-          <table class="table" id="wordCountTable">
-            <thead>
+          <table class="table table-striped" id="wordCountTable">
+            <thead class="thead-dark">
               <th>Word</th>
               <th>Count</th>
             </thead>
@@ -55,8 +55,9 @@ $(document).ready(function () {
             var words = getWordsFromText(text);
             var wordsDict = getWordCountDictionary(words);
             var wordCountTable = createWordCountTable(wordsDict);
-            var wordCountTableContent = "<h2>Result</h2>" + wordCountTable;
-            $("#wordCountTableContainer").html(wordCountTableContent);
+            var resultHeader = "<h2>Result</h2>"
+            $("#wordCountTableContainer").html(wordCountTable);
+            $("#resultHeaderContainer").html(resultHeader);
         }
     });
 });

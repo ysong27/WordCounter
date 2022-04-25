@@ -1,21 +1,33 @@
-#userTextContainer {
+.row {
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
+
+.row > div {
+    display: flex;
+    justify-content: center;
+}
+
 #userTextContainer > * {
     display: block;
-    margin-top: 10px;
 }
 
 #userTextContainer > textarea {
     width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 800px;
 }
 
 #wordCountTable {
     width: 100%;
+    font-size: small;
+    text-align: center;
+    max-width: 800px;
 }
+
 #wordCountButton {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
 }
 
