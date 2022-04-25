@@ -27,7 +27,16 @@
 }
 
 #wordCountButton {
-    width: 100%;
-    max-width: 400px;
+    width: 350px;
+    margin-right: 10px;
+}
+
+#clearButton {
+    width: 100px;
+}
+
+#wordCountTable_wrapper {
+    width: 100% !important;
+    max-width: 800px;
 }
 

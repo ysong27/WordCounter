@@ -55,9 +55,14 @@ $(document).ready(function () {
             var words = getWordsFromText(text);
             var wordsDict = getWordCountDictionary(words);
             var wordCountTable = createWordCountTable(wordsDict);
-            var resultHeader = "<h2>Result</h2>"
             $("#wordCountTableContainer").html(wordCountTable);
+            $("#wordCountTable").DataTable({
+                searching: false,
+                "order": [[ 1, "desc" ]]
+            });
+            var resultHeader = "<h2>Result</h2>"
             $("#resultHeaderContainer").html(resultHeader);
+
         }
     });
 });
